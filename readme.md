@@ -3,7 +3,7 @@
 You can learn PostCSS from this sample
 
 
-## post-cssnext
+## postcss-next
 You can use latest CSS syntax like variables
 
 before
