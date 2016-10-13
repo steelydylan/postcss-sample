@@ -1,0 +1,52 @@
+/* custom properties */
+/* http://dev.w3.org/csswg/css-variables/ */
+
+.h1 {
+	color: #e86100;
+}
+
+.h1:hover {
+	color: #2c3e50;
+}
+
+body {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+
+/* Variables */
+
+.menuLink {
+	color: #f00;
+}
+
+
+/* Mixins */
+
+.search {
+	padding-left: 16px;
+}
+
+.search::after {
+	content: "";
+	background-url: url(/icons/search.png);
+}
+
+/* Nested */
+.phoneTitle {
+	width: 100px;
+}
+.phoneTitle.titleRight {
+	float: right;
+}
+.phoneTitle.titleRight .link {
+	color: #f00;
+}
+
+/* prefix */
+.box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}

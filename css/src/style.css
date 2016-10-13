@@ -1,0 +1,62 @@
+/* custom properties */
+/* http://dev.w3.org/csswg/css-variables/ */
+:root {
+	--primary-color: #e86100;
+	--secondary-color: #2c3e50;
+	--base-fontsize: 1rem;
+}
+
+.h1 {
+	color: var(--primary-color);
+}
+
+.h1:hover {
+	color: var(--secondary-color);
+}
+
+body {
+	font-size: var(--base-fontsize);
+}
+
+
+/* Variables */
+$red: #f00;
+
+.menuLink {
+	color: $red;
+}
+
+
+/* Mixins */
+@define-mixin icon $name {
+		padding-left: 16px;
+
+	&::after {
+		content: "";
+		background-url: url(/icons/$(name).png);
+	}
+}
+
+.search {
+	@mixin icon search ;
+}
+
+/* Nested */
+.phone {
+	&Title {
+		width: 100px;
+
+		&.titleRight {
+			float: right;
+
+			.link {
+				color: $red;
+			}
+		}
+	}
+}
+
+/* prefix */
+.box {
+	display: flex;
+}
